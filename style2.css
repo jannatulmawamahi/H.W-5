@@ -1,0 +1,52 @@
+nav{
+    box-shadow: 0 0 100px midnightblue;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    background-color:skyblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding:5px;
+    transition: 0.8s;
+}
+ul li a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+ul li ul{
+    background: white;
+    position: absolute;
+    display: none;
+    transition: 0.9s;
+    font-size: 10px;
+}
+ul li:hover ul{
+    display:block;
+}
+ul li ul li{
+    display: block;
+    top:100%;
+    right:0;
+
+}
+ul li ul li ul{
+    background:white;
+    position:absolute;
+    display:none;
+}
+ul li ul li:hover ul{
+    display: block;
+}
+ul li ul li ul{
+    display:block;
+    top:100%;
+    left:50%;
+}
